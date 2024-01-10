@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+* {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+/* Hero */
+
+main::before {
+  content: "";
+  position: absolute;
+  top: -120%;
+  left: 0;
+  width: 100vw;
+  height: 250vh;
+  background: #fafbff;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -2;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.mask img {
+  width: 50%;
+}
+
+.mask h1 {
+  font-size: 3.5rem;
+}
+
+@media (max-width: 876px) {
+  main::before {
+    content: "";
+    position: absolute;
+    top: -155%;
+    left: 0;
+    width: 100vw;
+    height: 250vh;
+    background: #fafbff;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -2;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .mask img {
+    width: 70%;
+  }
+
+  .mask h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  main::before {
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: 0;
+    width: 100vw;
+    height: 250vh;
+    background: #fafbff;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -2;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .mask img {
+    width: 100%;
+  }
+
+  .mask h1 {
+    font-size: 3rem;
+  }
+}
+/* Hero */
+
+/* Features */
+#features img {
+  width: 10%;
+}
+
+@media (max-width: 576px) {
+  #features img {
+    width: 20%;
+  }
+}
+/* Features */
+
+/* Resources */
+#resources .card {
+  width: 100%;
+}
+
+#resources p,
+#resources a {
+  font-size: 1rem;
+}
+
+@media (max-width: 876px) {
+  #resources p,
+  #resources a {
+    font-size: 0.8rem;
+  }
+}
+/* Resources */
+
+/* Pricing */
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 300px;
+  grid-gap: 10px;
+}
+.item {
+  background: #bbb;
+  padding: 20px;
+  border-radius: 8px;
+}
+.item1,
+.item2 {
+  background: #0bd;
+}
+
+.item1 {
+  grid-row: 1/3;
+}
+.item2 {
+  grid-column: 2/4;
+}
+/* Pricing */

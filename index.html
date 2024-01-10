@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <!-- bootstrap style -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm position-fixed vw-100 z-3">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-1 d-none d-sm-block me-5 fw-bold" href="#"
+          >Cr_tive</a
+        >
+        <button
+          class="border d-block d-sm-none navbar-brand border-0 bg-transparent"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation">
+          <span class="d-flex navbar-brand">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4 18H10"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round" />
+              <path
+                d="M4 12L16 12"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round" />
+              <path
+                d="M4 6L10 6"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round" />
+            </svg>
+          </span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold fs-2" id="offcanvasNavbarLabel">
+              Cr_tive
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link fw-medium" aria-current="page" href="#"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Demo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex gap-4">
+          <button class="btn fw-semibold" type="submit">Search</button>
+          <button
+            class="btn d-none d-sm-block text-white py-1 px-4 bg-dark"
+            type="submit">
+            Search
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Hero -->
+    <main class="container text-center bg-image">
+      <div class="mask" style="padding: 5rem 0">
+        <div
+          class="d-flex flex-column justify-content-between align-items-center">
+          <div>
+            <h1 class="mb-3 text-black container">
+              <b>Create</b> a culture <b>People</b><br />
+              don't leave
+            </h1>
+            <p class="text-black">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              impedit nostrum vel obcaecati assumenda voluptatibus quasi ipsum
+              sint, iure magnam.
+            </p>
+          </div>
+          <img src="img/Scenes07.svg" alt="" />
+          <button
+            type="button"
+            class="btn d-flex rounded-0 justify-content-center align-items-center btn-outline-dark fs-5 py-2 px-3">
+            Read More
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- End of Hero -->
+
+    <!-- Features -->
+    <section
+      id="features"
+      class="container flex-column d-flex align-items-center justify-content-center">
+      <div>
+        <p class="fs-5">Trusted by companies you know</p>
+      </div>
+      <div
+        class="d-flex flex-wrap justify-content-center align-items-center gap-5">
+        <img src="img/company-1.png" alt="" />
+        <img src="img/company-2.png" alt="" />
+        <img src="img/company-3.png" alt="" />
+        <img src="img/company-4.png" alt="" />
+        <img src="img/company-5.png" alt="" />
+      </div>
+    </section>
+    <!-- End of Features -->
+
+    <!-- Resources -->
+    <section id="resources" class="container mt-5 pt-5 d-flex flex-column">
+      <aside class="row mb-5">
+        <div
+          class="col-md d-flex justify-content-end order-md-2"
+          style="
+            background-image: url(img/item-1.jpg);
+            height: 300px;
+            background-size: cover;
+          "></div>
+        <div class="col-md-7 order-md-1 mt-md-0 mt-3">
+          <div class="h-100 d-flex flex-column align-items-start">
+            <div class="card-body">
+              <h1 class="card-title fw-semibold">
+                Strats a recognition habit <br />
+                with feedback Friday
+              </h1>
+              <p class="card-text my-3" style="width: 60%">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi, vitae illo sequi cupiditate dolore quaerat assumenda
+                debitis commodi, asperiores dignissimos officia nobis autem
+                voluptate esse.
+              </p>
+            </div>
+            <a type="button" class="btn rounded-0 btn-outline-dark py-2 px-5">
+              Read More
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="row d-none d-sm-flex flex-nowrap">
+        <div class="col text-center">
+          <div class="card border-0 rounded-0">
+            <img src="img/item-2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title fw-medium">
+                Recognize in the moment with kudos
+              </h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+                nam? Nam voluptates deleniti fuga maiores!
+              </p>
+              <a type="button" class="btn rounded-0 btn-outline-dark py-2 px-5">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="card border-0 rounded-0">
+            <img src="img/item-3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title fw-medium">
+                Superchacrge recognition with rewards
+              </h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                eos voluptates dignissimos.
+              </p>
+              <a type="button" class="btn rounded-0 btn-outline-dark py-2 px-5">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img src="img/item-4.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title fw-medium">
+                Superchacrge recognition with rewards
+              </h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                qui, provident rem nobis quia ullam commodi.
+              </p>
+              <a type="button" class="btn rounded-0 btn-outline-dark py-2 px-5">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Resources -->
+
+    <!-- Pricing -->
+    <section id="pricing" class="clearfix container my-5 pt-5">
+      <img
+        src="img/Scenes01.svg"
+        class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid"
+        alt="..." />
+
+      <div class="mt-4">
+        <div class="row">
+          <div class="col-md-12 p-0 mb-3">
+            <div class="item item1 bg-transparent text-black">
+              <h1 class="fw-semibold">
+                Ready to improve engagement & retention
+              </h1>
+              <p class="my-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate eveniet repellendus nesciunt illum eaque debitis
+                nulla alias a minima neque commodi nostrum nam maiores, laborum
+                provident id similique eum libero!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3 d-none d-md-block">
+            <img src="img/Scenes02.svg" class="img-fluid" alt="..." />
+          </div>
+          <div class="col-md-6 d-none d-md-block mb-3">
+            <img src="img/Scenes03.svg" class="img-fluid" alt="..." />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Pricing -->
+
+    <!-- Testimony -->
+    <section
+      class="container flex-column d-flex align-items-center justify-content-center my-5 pt-5">
+      <div class="mb-5 pb-5">
+        <div class="card-body text-center">
+          <h1 class="card-title fw-semibold">
+            Hear what people are saying about Matter
+          </h1>
+          <p class="card-text my-3" style="max-width: 40rem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            consectetur adipisci voluptatem quo debitis, voluptatum at
+            necessitatibus vero perspiciatis officia, doloribus, ipsam magni.
+            Mollitia, exercitationem reiciendis at eligendi facere fuga.
+          </p>
+          <a type="button" class="btn rounded-0 btn-outline-dark py-2 px-5">
+            Read More
+          </a>
+        </div>
+      </div>
+      <div
+        class="d-flex flex-wrap justify-content-center align-items-center gap-5">
+        <div
+          class="card mb-3 rounded-0 text-black"
+          style="
+            max-width: 20rem;
+            min-height: 20rem;
+            background-color: #74a8da;
+          ">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam sit
+              magni libero provident corporis obcaecati nulla minus maxime eos
+              error dicta, nobis voluptatibus fugiat, illum possimus blanditiis
+              corrupti atque quidem. Consequuntur nemo est voluptate ullam ea
+              harum quae voluptatem, dolores earum libero labore quaerat illo
+              debitis fugiat veniam iure hic.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <div class="me-2">
+                  <img
+                    src="img/Character01.svg"
+                    class="rounded-circle"
+                    width="40px"
+                    height="40px" />
+                </div>
+                <div>
+                  <h5 class="m-0">John Doe</h5>
+                  <p class="m-0">Lorem, ipsum dolor.</p>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="navbar-brand d-none d-sm-block fw-bold"
+                  style="transform: rotate(-20deg)">
+                  Cr_tive
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card mb-3 rounded-0 text-black"
+          style="
+            max-width: 20rem;
+            min-height: 20rem;
+            background-color: #8cc4df;
+          ">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+              ipsa eum corporis impedit in similique magni nulla, aspernatur
+              accusamus eaque commodi possimus vel porro atque rerum officiis
+              fugit, esse beatae!
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <div class="me-2">
+                  <img
+                    src="img/Character02.svg"
+                    class="rounded-circle"
+                    width="40px"
+                    height="40px" />
+                </div>
+                <div>
+                  <h5 class="m-0">John Doe</h5>
+                  <p class="m-0">Lorem, ipsum dolor.</p>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="navbar-brand d-none d-sm-block fw-bold"
+                  style="transform: rotate(-20deg)">
+                  Cr_tive
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card mb-3 rounded-0 text-black"
+          style="
+            max-width: 20rem;
+            min-height: 20rem;
+            background-color: #b3c8e7;
+          ">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
+              iure distinctio fugiat minus facilis dolor maxime. Temporibus sed
+              repellat nemo voluptatibus itaque impedit enim ea quibusdam
+              aliquam optio ducimus distinctio soluta blanditiis nam culpa
+              laudantium amet voluptatem nulla consequuntur quod et omnis,
+              labore a iusto. Molestiae.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center">
+                <div class="me-2">
+                  <img
+                    src="img/Character03.svg"
+                    class="rounded-circle"
+                    width="40px"
+                    height="40px" />
+                </div>
+                <div>
+                  <h5 class="m-0">John Doe</h5>
+                  <p class="m-0">Lorem, ipsum dolor.</p>
+                </div>
+              </div>
+              <div>
+                <p
+                  class="navbar-brand d-none d-sm-block fw-bold"
+                  style="transform: rotate(-20deg)">
+                  Cr_tive
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Testimony -->
+
+    <!-- Demo -->
+    <section class="container my-5 pt-5">
+      <div class="mb-5 pb-5">
+        <div
+          class="card-body text-center flex-column d-flex align-items-center justify-content-center">
+          <h1 class="card-title" style="font-size: 4rem; max-width: 40rem">
+            Start meaningful <b>recognition</b> and <b>rewards</b> that Matter
+          </h1>
+          <p class="card-text my-3" style="max-width: 40rem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            consectetur adipisci voluptatem quo debitis, voluptatum at
+            necessitatibus vero perspiciatis officia, doloribus, ipsam magni.
+            Mollitia, exercitationem reiciendis at eligendi facere fuga.
+          </p>
+          <div>
+            <a type="button" class="btn rounded-0 btn-outline-dark py-2 px-5">
+              Add to slack for free
+            </a>
+            <a type="button" class="btn rounded-0 bg-dark text-white py-2 px-5">
+              Add to Team for free
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Demo -->
+
+    <!-- Footer -->
+    <footer class="bg-transparent">
+      <div class="container p-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="navbar-brand fs-3 d-none d-sm-block me-5 fw-bold">
+              Cr_tive
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Reprehenderit, iure?
+            </p>
+            <img src="img/Scenes08.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-3 col-md-2 mb-3">
+            <h5>Company</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Abou Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Careers</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Blog</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Customer Stories</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-3 col-md-2 mb-3">
+            <h5>Company</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Feedback</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Kudos</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Reward</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Analysis</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Feedback Surveys</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-3 col-md-2 mb-3">
+            <h5>Company</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Demo</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Video Guiders</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Develop Skills</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Help Center</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-3 col-md-2 mb-3">
+            <h5>Company</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Terms</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Privacy</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Security</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">QNA</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Copyright</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a
+              href="/"
+              class="mb-3 me-2 mb-md-0 text-black text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap" />
+              </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-black">Made by BintangRF</span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="text-black" href="#"><i class="bi bi-facebook"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-black" href="#"><i class="bi bi-twitter"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-black" href="#"><i class="bi bi-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!--  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
